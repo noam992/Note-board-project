@@ -1,0 +1,107 @@
+
+/* Background of main page, using tiles */
+body {
+    background-image: url(./assets/images/tile.jpg);
+}
+
+/* Style for title include external font */
+@font-face {
+    font-family: "MaShanZheng";
+    src: url(./assets/fonts/MaShanZheng-Regular.ttf);
+}
+
+/* Caption */
+h1.main-title{
+    padding: 20px 0 20px 0;
+    font-family: "MaShanZheng";
+    text-align: center;
+}
+
+/* Style for form, Focus on background's form */
+.background-input {
+    background-image: url(./assets/images/formbg.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-position: 50% 35%;
+    padding: 10px 0 10px 0;
+
+}
+
+/* Style for table, focus on center tags */
+form.background-input table {
+    margin-left:auto; 
+    margin-right:auto;  
+}
+
+form.background-input table tr td:nth-child(2) {
+    text-align: center;
+}
+
+form.background-input table tr td:nth-child(1) {
+    font-weight: bold;
+}
+
+/* Add margin for input tags to align them to background ,row's notebook, */
+form.background-input input{
+    margin: 0.5px;
+}
+
+/* Style for notes */
+#containerDiv > div {
+    width: 200px;
+    height: 250px;
+    border: 1px solid none;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    background-image: url("./assets/images/notebg.png");
+    animation: FadeIn 3s;
+    position: relative;
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Style for text's note  */
+.taskClass {
+    position: absolute;
+    top: 25px;
+    border: 1px solid black;
+    width: 150px;
+    height: 160px;
+    overflow-y: Auto;
+}
+
+/* Style for date's note  */
+.dateClass {
+    position: absolute;
+    left: 15px;
+    top: 190px;
+    font-weight: bold;
+}
+
+/* Style for time's note  */
+.timeClass {
+    position: absolute;
+    left: 15px;
+    top: 215px;
+    font-weight: bold;
+}
+
+/* Style for remove button of note  */
+#removeObject {
+    position: absolute;
+    left: 148px;
+    top: 5px;
+    background-color: none;
+    opacity: 0;
+}
+
+
+
